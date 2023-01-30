@@ -1,0 +1,574 @@
+/*Default*/
+
+@font-face {
+    font-family: 'GothamLight';
+    src: url('../fonts/GothamLight.eot');
+    src: url('../fonts/GothamLight.eot') format('embedded-opentype'),
+         url('../fonts/GothamLight.woff2') format('woff2'),
+         url('../fonts/GothamLight.woff') format('woff'),
+         url('../fonts/GothamLight.ttf') format('truetype'),
+         url('../fonts/GothamLight.svg#GothamLight') format('svg');
+}
+
+@font-face {
+	font-family: 'gotham_black';
+	src: url('../fonts/gotham-black-webfont.eot');
+	src: url('../fonts/gotham-black-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/gotham-black-webfont.woff2') format('woff2'),  url('../fonts/gotham-black-webfont.woff') format('woff'),  url('../fonts/gotham-black-webfont.ttf') format('truetype'),  url('../fonts/gotham-black-webfont.svg#gotham_blackregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gotham_bold';
+	src: url('../fonts/gotham-bold-webfont.eot');
+	src: url('../fonts/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/gotham-bold-webfont.woff2') format('woff2'),  url('../fonts/gotham-bold-webfont.woff') format('woff'),  url('../fonts/gotham-bold-webfont.ttf') format('truetype'),  url('../fonts/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'gotham_medium';
+	src: url('../fonts/gotham-medium-webfont.eot');
+	src: url('../fonts/gotham-medium-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/gotham-medium-webfont.woff2') format('woff2'),  url('../fonts/gotham-medium-webfont.woff') format('woff'),  url('../fonts/gotham-medium-webfont.ttf') format('truetype'),  url('../fonts/gotham-medium-webfont.svg#gotham_mediumregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'gotham_book';
+    src: url('../fonts/gotham-book-webfont.eot');
+    src: url('../fonts/gotham-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gotham-book-webfont.woff2') format('woff2'),
+         url('../fonts/gotham-book-webfont.woff') format('woff'),
+         url('../fonts/gotham-book-webfont.ttf') format('truetype'),
+         url('../fonts/gotham-book-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto;
+}
+.btn{
+	border-radius: 0;
+	padding: 10px 22px 10px 22px;
+	font-family: 'gotham_bold';
+}
+.btn-primary{  
+  border: solid 1px #c3002f;
+  background-color: #c3002f;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #fff;
+}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary:active:focus,.btn-primary:active:hover{
+	border: solid 1px #d9093b;
+  background-color: #d9093b;
+}
+.font-light{font-family: 'gotham_book';}
+.font-medium{font-family: 'gotham_medium';}
+h1{  
+  font-size: 28px; 
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: center;
+  color: #333;
+}
+@media (min-width: 1440px){
+	h1{
+		font-size: 36px; 
+	}
+}
+
+/*Header section*/
+.main-header{
+	box-shadow: 4px 0 12px 4px rgba(0, 21, 41, 0.08);
+	background-color: #c3002f;
+}
+.header{
+	padding: 10px 24px 10px 24px;
+}
+@media (min-width: 1440px){
+	.header{padding: 18px 24px 18px 24px;}
+}
+img.logo {
+  margin: 2px 17.1px 2px 12.1px;
+  object-fit: contain;
+}
+.seprator{
+  height: 60px;
+  margin: 0 24px 0 0 ;
+  border-right:1px solid rgba(140, 140, 140, 0.56);
+  padding-right: 24px;
+  align-items: center;
+  display: flex;
+}
+.navbar{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.navbar-toggle{display:block}	
+.navbar-expand-lg .navbar-toggler {
+	display: flex;
+	align-items: center;
+}
+.navbar-toggle {
+	background:transparent!important;
+	border: none;
+	cursor: pointer;
+	height: 40px;
+	outline: 0;
+	overflow: hidden;
+	position: relative;
+	text-indent: -900em;
+	width: 40px;
+	min-width: 40px;
+	float: right;
+	margin-top: 18px;
+	margin-right: 2px;
+	padding: 12px 8px
+}
+.navbar-toggle .icon-bar {
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	display: block;
+	margin-bottom: 4px
+}
+
+#navbar {
+	background:#fff;
+	position: fixed;
+	top: 0;
+	left: -280px;
+	height: 100%;
+	width: 280px;
+	max-width: 290px;
+	padding: 20px 0;
+	transition: 0.3s all;
+	-webkit-transition: 0.3s all;
+	display: block;
+	overflow-y: auto;
+	border-right:1px solid #ddd;
+	overflow-y:auto;
+}
+#navbar.in {
+	left: 0;
+}
+
+.navbar-toggler-icon{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    margin: 0px 0;
+	display:block
+}
+.navbar-toggler-icon span {
+    opacity: 1;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    color: black;
+    background-color: #fff;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: .4s ease-in-out;
+}	
+
+.navbar-toggler-icon span:nth-child(1) {
+    top: 0;
+}
+.navbar-toggler-icon span:nth-child(2) {
+    top: 12px;
+}
+.navbar-toggler-icon span:nth-child(3) {
+    top: 25px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(1) {
+    transform:translateY(15px) rotate(135deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon span:nth-child(3) {
+    transform:translateY(-10px) rotate(-131deg);
+}
+.navbar-toggler:focus{box-shadow: none;}
+
+@media (max-width: 767px){
+	.header{padding: 10px 4px 10px 4px;}
+	.car-name-logo{display: none !important;}
+	.seprator{min-width: 40px;padding-right: 14px;margin: 0 14px 0 0;}
+	.navbar-brand{display: block;}
+	.navbar-brand .logo{margin:0;}
+	.navbar-toggler{padding: 0}
+}
+
+
+/*Banner*/
+.banner-section{
+	position: relative;
+	overflow: hidden;
+}
+.banner-inside,.image-banner{
+	height: 100%
+}
+.image-banner img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-position: center;
+}
+
+.car-info{
+	position: absolute;
+	padding: 15px;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	color: #fff;
+	width: 100%;
+	max-width: 250px;
+}
+.car-info:after{
+	clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	content: '';
+	z-index: -1
+}
+.item-name{
+  font-family: 'gotham_bold';
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 0
+}
+.item-color-name{
+  font-family: gotham_book;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #fff;
+  margin-bottom: 0
+}
+.item-price{
+  font-family: 'gotham_bold';
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #fff;
+  margin-bottom: 0
+}
+
+.car-info-inside{
+	position: absolute;
+	padding: 15px;
+	z-index: 1;
+	right: 0;
+	top: 0;
+	color: #fff;
+
+}
+.car-info-inside a{
+	background-color: rgba(0,0,0,0.6);
+	padding: 10px 33px;
+  	object-fit: contain;
+  	border-radius: 8px;
+  	display: flex;
+  	min-width: 200px;
+  	justify-content: center;
+  	align-items: center;
+  	color: #fff;
+  	font-size: 18px;
+  	text-decoration: none;
+  	font-family: 'gotham_bold';
+}
+.car-info-inside a img{
+	margin-right: 15px
+}
+.car-info-inside a:hover{
+	background-color: #c3002f
+}
+
+@media (max-width: 767px){
+	.car-info-inside{
+		top: auto;
+		bottom: 0
+	}
+}
+
+
+/*Comparision page*/
+.check-circle{
+  width: 26px;
+  height: 26px;
+  margin: 30px auto 16px;
+  object-fit: contain;
+  border-radius: 34px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+  border: solid 2px #c3002f;
+  background-color: #fff;
+  display: block;
+  position: relative;
+}
+.select-item input[type="checkbox"]:checked + span:after {
+	background: url(../images/selected.svg) center center no-repeat;
+	background-size: cover;
+	content: '';
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 2px;
+}
+.select-item input[type="checkbox"]:checked + span{
+	border-color: transparent;
+	box-shadow: none;
+}
+
+.item-comparison{
+	width: 100%
+}
+.item-comparison input[type="checkbox"]{
+	position: absolute;
+	visibility: hidden;
+}
+.item-info{
+  border-radius: 4px;
+  border: solid 1px transparent;
+  padding: 12px;
+  margin: 12px 0;
+  box-shadow: 0 2px 8px 2px rgba(0, 21, 41, 0.07);
+  background-color: #fff;
+}
+.item-info:hover{
+	border-color: #c3002f
+}
+.item-info .image-info{
+  border-radius: 4px;
+  border: solid 1px #c8c8c8;
+  padding: 35px;
+  margin-bottom: 10px;
+  position: relative;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-info .image-info img {
+	max-height: 150px;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+.brand-price{
+	font-size: 24px
+}
+.brand-name{
+	padding-right: 10px
+}
+.owl-carousel .owl-item .brand-name img{
+	max-width: 80%;
+	width: auto;
+}
+.color-selection{
+	padding-top: 20px;
+	padding-bottom: 20px
+}
+.colors{
+	list-style-type: none;
+	padding: 0;
+	margin: 0
+}
+.colors li{
+	margin-right: 15px
+}
+.colors label span{
+	width: 28px;
+	height: 28px;
+	border-radius: 28.4px;
+	border: solid 4px #fff;
+	display: block;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+.colors label input[type="radio"]{
+	position: absolute;
+	visibility: hidden;
+}
+.colors label input[type="radio"]:checked + span::after {
+	box-shadow: 0 5px 4px 0px rgba(0, 0, 0, 0.22);
+	/* background-color: #fff; */
+	content: '';
+	position: absolute;
+	left: -7px;
+	top: -7px;
+	bottom: -7px;
+	right: -7px;
+	z-index: -1;
+	border-radius: 50px;
+}
+.color-gray{  
+  background-image: linear-gradient(to bottom, #99a6b3 1%, #333f4b 75%);
+}
+.color-red{  background-image: linear-gradient(to bottom, #c36872, #600008 65%);}
+
+.custom-select{
+	background-image: url(../images/back.svg);
+	background-repeat: no-repeat;
+	background-size: 24px;
+	background-position: 96% center;
+	font-family: 'gotham_medium';
+}
+.overflow-v{overflow-y: auto;}
+
+/*footer*/
+.bottom-section{
+	background: #fff;
+	border-top: 1px solid rgba(0, 21, 41, 0.28);
+	border-bottom: 1px solid rgba(0, 21, 41, 0.28);
+	overflow: hidden;
+}
+.bottom-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.bottom-nav li {
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+}
+.bottom-nav li:not(:first-child)::before {
+	content: '';
+	border-left: 1px solid rgba(0, 21, 41, 0.28);
+	position: absolute;
+	left: 0;
+	height: 116%;
+	transform: rotate(24deg);
+	top: -5px;
+}
+.bottom-nav li,.bottom-nav li a{
+	color: #222;
+	text-decoration: none;
+	font-weight: 500;
+	white-space: nowrap;
+	font-family: 'gotham_medium';
+}
+.bottom-nav li a{
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	overflow-x: hidden;
+}
+.bottom-nav li .ico{margin-right: 12px;min-width: 30px}
+/* Switch Container */
+.switch {
+  position: relative;
+  display: inline-block;
+}
+/* Hide the checkbox input (only needed for `:checked` property) */
+.switch-input {
+  display: none;
+}
+/* Switch */
+.switch-label {
+  display: block;
+  width: 48px;
+  height: 24px;
+  text-indent: -150%;
+  clip: rect(0 0 0 0);
+  color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  /* Switch Rail & Knob */
+  /* Switch Rail */
+  /* Switch Knob */
+}
+.switch-label:before,
+.switch-label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+.switch-label:before {
+  width: 100%;
+  height: 100%;
+  background-color: #dedede;
+  border-radius: 9999em;
+  transition: background-color 0.25s ease;
+}
+.switch-label:after {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+  transition: left 0.25s ease;
+  border: solid 1px #666;
+}
+/* When input is checked */
+.switch-input:checked + .switch-label {
+  /* Switch Rail */
+  /* Switch Knob */
+}
+.switch-input:checked + .switch-label:before {
+  background-color: #89c12d;
+}
+.switch-input:checked + .switch-label:after {
+  left: 24px;
+}
+@media (max-width: 1024px){
+	.text{
+		display: none;
+	}
+}
+@media (max-width: 767px){
+	.full{flex:0 0 auto;width:100%}
+	.bottom-section>div{
+		padding-top: 15px;
+		padding-bottom: 15px
+	}
+	.bottom-nav,.xs-hidden{
+		display: none !important;
+	}
+	.bottom-section{
+		text-align: center;
+	}
+}
